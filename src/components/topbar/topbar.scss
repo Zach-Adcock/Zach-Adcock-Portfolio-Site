@@ -1,0 +1,81 @@
+@import "../../global.scss";
+
+.topbar {
+  width: 100%;
+  height: 100px;
+  background-color: $mainColor;
+  color: white;
+
+  position: fixed;
+  top: 0;
+  z-index: 3;
+
+  .wrapper {
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      .logo {
+        font-size: 45px;
+        font-weight: 500;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+    .right {
+      display: flex;
+      width: 25%;
+      justify-content: space-around;
+      align-items: center;
+
+      .header-links {
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .hamburger {
+        width: 30px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: white;
+
+        span {
+          width: 100%;
+          height: 4px;
+          background-color: white;
+          transform-origin: left;
+          transition: all 1.5s;
+          transition-timing-function: cubic-bezier(0, 0, 0.5, 1);
+        }
+      }
+    }
+  }
+  &.active {
+    background-color: white;
+    color: $mainColor;
+
+    .hamburger {
+      span {
+        &:nth-child(1) {
+          background-color: $mainColor;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          background-color: $mainColor;
+          opacity: 0;
+          transition: none;
+        }
+        &:nth-child(3) {
+          background-color: $mainColor;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
