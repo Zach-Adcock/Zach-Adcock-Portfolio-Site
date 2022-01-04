@@ -1,3 +1,133 @@
+@import "../../global.scss";
+
 .intro {
-  background-color: lightskyblue;
+  // background-color: lightskyblue;
+  * {
+    transition: all 1s ease;
+  }
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.intro::before {
+  content: "";
+  background: url(../../../public/images/forest.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 86vh;
+
+  object-fit: cover;
+}
+.photo-container {
+  flex: 0.4;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-circle {
+  background: url(../../../public/images/headshot.jpg);
+  background-size: cover;
+  background-position: 30% 30%; /* First value is from left and second is from top. You can use use number as well*/
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 50%;
+  min-width: 200px;
+  height: 50%;
+  min-height: 200px;
+  opacity: 0.3;
+  z-index: 2;
+
+  &:hover {
+    // border: 2px solid white;
+    opacity: 1;
+  }
+}
+.photo-circle:hover ~ .rectangle {
+  // opacity: 1;
+}
+
+.rectangle {
+  height: 35%;
+  width: 20%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  background-color: rgb(38, 42, 38);
+  opacity: 0;
+}
+
+.intro-text-container {
+  padding-left: 100px;
+
+  height: 100%;
+  width: 100%;
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    padding-left: 120px;
+
+    flex: 0.3;
+    height: 100px;
+    width: 100px;
+    text-decoration: none;
+    color: $mainGreen;
+
+    animation: up-down 1.75s infinite alternate
+      cubic-bezier(0.01, 0.01, 1, 0.07);
+
+    @keyframes up-down {
+      100% {
+        transform: translateY(20%);
+      }
+    }
+    &:hover {
+      animation-play-state: paused;
+    }
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.intro-text {
+  flex: 0.7;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    color: $mainGreen;
+    span {
+      color: inherit;
+    }
+    .ityped-cursor {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      // 50% {
+      //   opacity: 1;
+      // }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
 }

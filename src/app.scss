@@ -4,9 +4,9 @@
   .sections {
     width: 100%;
     height: calc(100vh - 100px);
-    background-color: chocolate;
+    // background-color: chocolate;
     position: relative;
-    top: 100px;
+    top: 12vh;
 
     scroll-snap-type: y mandatory;
     overflow: scroll;

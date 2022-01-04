@@ -1,12 +1,15 @@
-import "./topbar.scss";
-import {Person} from "@material-ui/icons"
-
-export default function Topbar(props) {
+import "./navbar.scss";
+import {Person} from "@material-ui/icons";
+// import {ZAlogo} from "../../../public/images/ZAlogo";
+import logo from "../../../src/ZAlogo.png";
+export default function Navbar(props) {
     return (
-        <div className={"topbar " +  (props.menuActive && "active")} id="topbar">
+        <div className={"navbar " +  (props.menuActive && "active")} id="navbar">
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">Logo</a>
+                    <a href="#intro" className="logo">
+                        <img src={logo} />
+                    </a>
                 </div>
                 <div className="right">
                     <a href="#intro" className="header-links">About</a>
