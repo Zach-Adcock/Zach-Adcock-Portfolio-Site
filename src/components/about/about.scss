@@ -1,0 +1,42 @@
+.about {
+  background-color: lightsalmon;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 50px;
+
+  width: 50vw;
+  height: 90%;
+
+  h1 {
+    font-size: 80px;
+  }
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 60%;
+  width: 100%;
+  background-color: rgb(173, 172, 172);
+  box-sizing: border-box;
+  padding: 15px;
+  z-index: 2;
+}
+
+#tsparticles {
+  z-index: 1;
+  height: 95%;
+  position: absolute;
+}
+canvas {
+  display: block;
+}
