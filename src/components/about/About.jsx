@@ -15,7 +15,7 @@ export default function About() {
       const particlesLoaded = (about) => {
       };
     return (
-        <div className="about">
+        <div className="about" id="about">
             <Particles
       id="tsparticles"
       init={particlesInit}
@@ -121,29 +121,25 @@ export default function About() {
             </div>
             <div className="icon-container">
                 <div className="icon-box">
+                    <img src={JavascriptLogo} alt="JavascriptLogo" className='picture'/>
+                    <h2>JavaScript</h2>
+                    <div className="box"></div>
+                </div>
+                <div className="icon-box">
                     <img src={CSSLogo} alt="CSSLogo" className='picture' />
                     <h2>CSS</h2>
                     <div className="box"></div>
                 </div>
                 <div className="icon-box">
-                    <img src={HTMLLogo} alt="HTMLLogo"/>
+                    <img src={HTMLLogo} alt="HTMLLogo" className='picture'/>
                     <h2>HTML</h2>
                     <div className="box"></div>
                 </div>
-                <div className="icon-box">
-                    <img src={JavascriptLogo} alt="JavascriptLogo"/>
-                    <h2>JavaScript</h2>
-                    <div className="box"></div>
-                </div>
                 <div className="icon-box">                    
-                    <img src={ReactLogo} alt="ReactLogo"/>
+                    <img src={ReactLogo} alt="ReactLogo" className='picture'/>
                     <h2>React</h2>
                     <div className="box"></div>
                 </div>
-                
-                
-                
-                
             </div>
         </div>
     )

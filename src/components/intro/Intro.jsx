@@ -30,7 +30,7 @@ export default function Intro() {
                     <h1>Zach.</h1>
                     <h2> <span ref={titleRef}></span></h2>
                 </div>
-                <a href="#works">
+                <a href="#about">
                     <ArrowDownward />
                 </a>
             </div>

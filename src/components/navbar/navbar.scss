@@ -34,11 +34,19 @@
     }
     .right {
       display: flex;
-      width: 25%;
-      min-width: 200px;
-      justify-content: space-around;
+      width: 45%;
+      min-width: 405px;
+      justify-content: flex-end;
       align-items: center;
-
+      .links {
+        display: flex;
+        a {
+          margin-right: 30px;
+          &:hover {
+            text-shadow: 2.5px 2.5px 0px lightsalmon;
+          }
+        }
+      }
       .header-links {
         font-size: 25px;
         font-weight: 500;

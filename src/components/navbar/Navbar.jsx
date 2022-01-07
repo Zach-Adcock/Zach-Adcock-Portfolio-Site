@@ -12,8 +12,11 @@ export default function Navbar(props) {
                     </a>
                 </div>
                 <div className="right">
-                    <a href="#about" className="header-links">About</a>
-                    <a href="#portfolio" className="header-links">Portfolio</a>
+                    <div className="links">
+                        <a href="#about" className="header-links">About</a>
+                        <a href="#portfolio" className="header-links">Portfolio</a>
+                        <a href="#contact" className="header-links">Contact Me</a>
+                    </div>
                     <div className="hamburger" onClick={() => props.setMenuActive(!props.menuActive)}>
                         <span className="line1"></span>
                         <span className="line2"></span>
