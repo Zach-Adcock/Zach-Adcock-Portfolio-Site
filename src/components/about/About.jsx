@@ -1,5 +1,10 @@
 import "./about.scss";
 import Particles from "react-tsparticles";
+import CSSLogo from "../../logos/css3.svg";
+import HTMLLogo from "../../logos/html.svg";
+import JavascriptLogo from "../../logos/javascript.svg";
+import ReactLogo from "../../logos/react.svg";
+
 
 
 export default function About() {
@@ -7,7 +12,7 @@ export default function About() {
         // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
       };
     
-      const particlesLoaded = (container) => {
+      const particlesLoaded = (about) => {
       };
     return (
         <div className="about">
@@ -21,6 +26,7 @@ export default function About() {
         //     value: "#0d47a1",
         //   },
         // },
+        fullScreen: {enable: false},
         fpsLimit: 60,
         interactivity: {
           events: {
@@ -112,6 +118,32 @@ export default function About() {
                         and play board games with friends and family.
                     </p>
                 </div>
+            </div>
+            <div className="icon-container">
+                <div className="icon-box">
+                    <img src={CSSLogo} alt="CSSLogo" className='picture' />
+                    <h2>CSS</h2>
+                    <div className="box"></div>
+                </div>
+                <div className="icon-box">
+                    <img src={HTMLLogo} alt="HTMLLogo"/>
+                    <h2>HTML</h2>
+                    <div className="box"></div>
+                </div>
+                <div className="icon-box">
+                    <img src={JavascriptLogo} alt="JavascriptLogo"/>
+                    <h2>JavaScript</h2>
+                    <div className="box"></div>
+                </div>
+                <div className="icon-box">                    
+                    <img src={ReactLogo} alt="ReactLogo"/>
+                    <h2>React</h2>
+                    <div className="box"></div>
+                </div>
+                
+                
+                
+                
             </div>
         </div>
     )
