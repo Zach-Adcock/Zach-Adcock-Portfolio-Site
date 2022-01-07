@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Zach-Adcock-Portfolio-Site/static/css/main.d44c69e1.css",
+    "main.js": "/Zach-Adcock-Portfolio-Site/static/js/main.67390b29.js",
+    "static/media/portfolio-shot.png": "/Zach-Adcock-Portfolio-Site/static/media/portfolio-shot.78d27790e26e5cd3bf96.png",
+    "static/media/planner-shot.png": "/Zach-Adcock-Portfolio-Site/static/media/planner-shot.0fb40b9655a67e3d279f.png",
+    "static/media/forest.jpg": "/Zach-Adcock-Portfolio-Site/static/media/forest.e70823940e7448ad24cd.jpg",
+    "static/media/library-shot.png": "/Zach-Adcock-Portfolio-Site/static/media/library-shot.898a0dd525a94ca4c206.png",
+    "static/media/etch-shot.png": "/Zach-Adcock-Portfolio-Site/static/media/etch-shot.89a4e0dc45f8ea69320e.png",
+    "static/media/ZAlogo.png": "/Zach-Adcock-Portfolio-Site/static/media/ZAlogo.4e2ab9154e6fe223dbf9.png",
+    "static/media/headshot.jpg": "/Zach-Adcock-Portfolio-Site/static/media/headshot.1c4b28d85340a923eec9.jpg",
+    "static/media/react.svg": "/Zach-Adcock-Portfolio-Site/static/media/react.0d41cf4c287a0775a11334efab118c58.svg",
+    "static/media/html.svg": "/Zach-Adcock-Portfolio-Site/static/media/html.079afa10d716571b3fa5327370e66439.svg",
+    "static/media/javascript.svg": "/Zach-Adcock-Portfolio-Site/static/media/javascript.de4c2594613e34b15666206bbede7327.svg",
+    "index.html": "/Zach-Adcock-Portfolio-Site/index.html",
+    "static/media/css3.svg": "/Zach-Adcock-Portfolio-Site/static/media/css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "main.d44c69e1.css.map": "/Zach-Adcock-Portfolio-Site/static/css/main.d44c69e1.css.map",
+    "main.67390b29.js.map": "/Zach-Adcock-Portfolio-Site/static/js/main.67390b29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d44c69e1.css",
+    "static/js/main.67390b29.js"
+  ]
+}
