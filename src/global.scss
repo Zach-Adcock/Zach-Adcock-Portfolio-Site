@@ -1,1 +1,9 @@
 $mainGreen: rgb(56, 109, 56);
+
+$mediumWidth: 700px;
+
+@mixin mobile {
+  @media (max-width: #{mediumWidth}) {
+    @content;
+  }
+}

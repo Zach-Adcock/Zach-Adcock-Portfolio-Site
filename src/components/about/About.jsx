@@ -42,13 +42,13 @@ export default function About() {
           },
           modes: {
             bubble: {
-              distance: 400,
+              distance: 100,
               duration: 2,
               opacity: 0.8,
               size: 40,
             },
             push: {
-              quantity: 4,
+              quantity: 1,
             },
             repulse: {
               distance: 200,
@@ -57,6 +57,9 @@ export default function About() {
           },
         },
         particles: {
+          orbit: {
+            reduceDuplicates: true,
+          },  
           color: {
             value: "#ffffff",
           },
@@ -68,14 +71,17 @@ export default function About() {
             width: 1,
           },
           collisions: {
-            enable: true,
+            enable: false,
+          },
+          bounce: {
+            enable: false,
           },
           move: {
             direction: "none",
             enable: true,
-            outMode: "bounce",
+            // outMode: "bounce",
             random: false,
-            speed: 6,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -89,11 +95,12 @@ export default function About() {
             value: 0.5,
           },
           shape: {
+            random: true,
             type: "circle",
           },
           size: {
             random: true,
-            value: 5,
+            value: 50,
           },
         },
         detectRetina: true,

@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .intro {
-  // background-color: lightskyblue;
   * {
     transition: all 1s ease;
   }
@@ -119,7 +118,7 @@
       color: inherit;
     }
     .ityped-cursor {
-      animation: blink 1s infinite;
+      animation: blink 10s infinite;
     }
     @keyframes blink {
       // 50% {
@@ -128,6 +127,20 @@
       100% {
         opacity: 0;
       }
+    }
+  }
+}
+
+//responsive design
+@media only screen and (max-width: 640px) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro-text-container {
+    padding: 0px 0px 100px 20px;
+    .intro-text {
+      padding-top: 10px;
+      margin-bottom: 50px;
     }
   }
 }

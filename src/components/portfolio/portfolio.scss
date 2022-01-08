@@ -123,3 +123,21 @@
     margin-left: 30px;
   }
 }
+
+@media only screen and (max-width: 640px) {
+  .portfolio {
+    height: 2000px !important;
+    h2 {
+      height: 100px;
+    }
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project {
+    width: 70vw;
+    height: 700px;
+  }
+}

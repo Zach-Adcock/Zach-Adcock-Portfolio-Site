@@ -19,4 +19,15 @@
       scroll-snap-align: start;
     }
   }
+  @media only screen and (max-width: 640px) {
+    .sections {
+      height: 100vh;
+      top: 0;
+    }
+    > * {
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+    }
+  }
 }

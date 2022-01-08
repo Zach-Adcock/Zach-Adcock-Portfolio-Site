@@ -105,3 +105,12 @@ canvas {
   cursor: crosshair;
   z-index: 2;
 }
+
+@media only screen and (max-width: 640px) {
+  .about-wrapper {
+    width: 90vw;
+  }
+  .icon-container {
+    width: 90vw;
+  }
+}

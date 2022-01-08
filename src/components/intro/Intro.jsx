@@ -13,7 +13,7 @@ export default function Intro() {
     useEffect(() => {
         init(titleRef.current, {
             showCursor:false,
-            backDelay: 100,
+            backDelay: 1000,
             // strings: ['Hire me','please','like realllyyy please hire me','please I\'m like begging you']
             strings: ['Front-End Developer', 'Collaborator', 'Life-Long Learner', 'Challenge Seeker']
         })

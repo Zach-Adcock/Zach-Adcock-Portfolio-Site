@@ -9,10 +9,10 @@ export default function Menu(props) {
                     <a href="#intro">Home</a>
                 </li>
                 <li onClick={() => props.setMenuActive(!props.menuActive)}>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
                 </li>
                 <li onClick={() => props.setMenuActive(!props.menuActive)}>
-                    <a href="#works">Works</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li onClick={() => props.setMenuActive(!props.menuActive)}>
                     <a href="#contact">Contact</a>
