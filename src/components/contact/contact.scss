@@ -55,12 +55,14 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .contact {
+    height: 100vh !important;
+  }
   .contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
     width: 90vw;
   }
 }

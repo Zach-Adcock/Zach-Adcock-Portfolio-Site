@@ -126,7 +126,7 @@
 
 @media only screen and (max-width: 640px) {
   .portfolio {
-    height: 2000px !important;
+    height: 1800px !important;
     h2 {
       height: 100px;
     }
@@ -138,6 +138,13 @@
   }
   .project {
     width: 70vw;
-    height: 700px;
+    height: 40vh;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .project-links {
+    .project-btn {
+      width: 20vw;
+    }
   }
 }
