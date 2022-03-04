@@ -22,7 +22,7 @@ export default function Contact() {
     const [submitting, setSubmitting] = useState(false);
     const [message, setMessage] = useState();
     const [recaptchaToken, setRecaptchaToken] = useState();
-
+    setSubmitting(false)
     const submitForm = async (e) => {
         e.preventDefault();
         await postSubmission();
