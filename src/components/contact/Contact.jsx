@@ -38,7 +38,7 @@ export default function Contact() {
             console.log(result);
             setMessage({
                 class: 'success-message',
-                text: 'Thanks, I\'ll get back to you soon\!'
+                text: `Thanks, I'll get back to you soon!`
             })
             setFormState(initialFormState) //resets form after submission
             recaptchaRef.current.reset(); //reset ReCAPTCHA after submission
