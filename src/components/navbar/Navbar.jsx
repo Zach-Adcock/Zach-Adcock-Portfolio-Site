@@ -1,5 +1,4 @@
 import "./navbar.scss";
-import {Person} from "@material-ui/icons";
 // import {ZAlogo} from "../../../public/images/ZAlogo";
 import logo from "../../../src/logos/ZAlogo.png";
 export default function Navbar(props) {
@@ -8,7 +7,7 @@ export default function Navbar(props) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">
-                        <img src={logo} />
+                        <img src={logo} alt="Zach Adcock's logo"/>
                     </a>
                 </div>
                 <div className="right">
