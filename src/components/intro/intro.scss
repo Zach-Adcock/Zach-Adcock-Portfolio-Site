@@ -28,8 +28,8 @@
   object-fit: cover;
 }
 .photo-container {
-  flex: 0.4;
-  z-index: 3;
+  flex: 0.35;
+  z-index: 1;
   height: 100%;
   width: 100%;
 
@@ -44,7 +44,7 @@
   background-repeat: no-repeat;
   border-radius: 50%;
   width: 50%;
-  min-width: 200px;
+  min-width: 250px;
   height: 50%;
   min-height: 200px;
   opacity: 0.3;
@@ -74,7 +74,7 @@
 
   height: 100%;
   width: 100%;
-  flex: 0.6;
+  flex: 0.65;
   display: flex;
   flex-direction: column;
 
@@ -85,7 +85,7 @@
     height: 100px;
     width: 100px;
     text-decoration: none;
-    color: $mainGreen;
+    color: #0377bd; //$mainGreen;
 
     animation: up-down 1.75s infinite alternate
       cubic-bezier(0.01, 0.01, 1, 0.07);
@@ -112,8 +112,8 @@
   flex-direction: column;
   justify-content: center;
 
-  h2 {
-    color: $mainGreen;
+  h3 {
+    color: #0377bd; //$mainGreen;
     span {
       color: inherit;
     }
@@ -130,6 +130,24 @@
     }
   }
 }
+.external-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  flex: 0.1;
+  bottom: 0px;
+  z-index: 3;
+  a {
+    width: 100%;
+    img {
+      width: 80%;
+    }
+  }
+}
+.external-links-mobile {
+  display: none;
+}
 
 //responsive design
 @media only screen and (max-width: 640px) {
@@ -137,26 +155,64 @@
     flex-direction: column-reverse;
   }
   .intro-text-container {
-    padding: 10px 0px 100px 20px;
-    height: 40vh;
+    margin-top: 10px;
+    padding: 10px 0px 0px 20px;
+    height: 70vh;
+    z-index: 2;
     .intro-text {
-      padding-top: 100px;
+      padding-top: 0px;
       padding-left: 10px;
-      margin-bottom: 50px;
+      flex: 1;
+    }
+    h2 {
+      height: 80px;
+      overflow-y: visible;
+    }
+    h1 {
+      height: 110px;
+      overflow-y: visible;
+    }
+    h3 {
+      height: 116px;
+      overflow-y: visible;
     }
     a {
-      padding-top: 0;
+      display: none;
     }
   }
   .photo-container {
     z-index: 1;
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    height: 40vh;
+    min-height: 300px;
     .rectangle {
       display: none;
     }
     .photo-circle {
-      height: 25vh;
       max-width: 200px;
+      min-width: 50px;
+      flex: 0.8;
     }
+    .external-links-mobile {
+      display: flex;
+      justify-content: end;
+      height: 100px;
+      width: 100%;
+      flex: 0.2;
+      z-index: 2;
+      min-height: 50px;
+      a {
+        height: 100%;
+        margin-right: 10px;
+        img {
+          height: 80%;
+        }
+      }
+    }
+  }
+  .external-links {
+    display: none;
   }
 }

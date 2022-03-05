@@ -2,6 +2,9 @@ import "./intro.scss"
 import {ArrowDownward} from "@material-ui/icons"
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import LinkedInLogo from "../../logos/LinkedInLogo.png";
+import GitHubLogo from "../../logos/GitHubLogo.png";
+
 
 
 
@@ -23,15 +26,32 @@ export default function Intro() {
             <div className="photo-container">
                 <div className="photo-circle"></div>
                 <div className="rectangle"></div>
+                <div className="external-links-mobile">
+                    <a href="https://www.linkedin.com/in/zachary-adcock/" alt="Zach Adcock LinkedIn URL">
+                        <img src={LinkedInLogo} alt="LinkedIn Logo" />
+                    </a>
+                    <a href="https://github.com/zach-adcock" alt="Zach Adcock GitHub URL">
+                        <img src={GitHubLogo} alt="GitHub Logo" />
+                    </a>
+                </div>
             </div>
             <div className="intro-text-container">
                 <div className="intro-text">
                     <h2>Hey, I'm</h2>
                     <h1>Zach.</h1>
-                    <h2> <span ref={titleRef}></span></h2>
+                    <h3> <span ref={titleRef}></span></h3>
                 </div>
                 <a href="#about">
                     <ArrowDownward />
+                </a>
+                
+            </div>
+            <div className="external-links">
+                <a href="https://www.linkedin.com/in/zachary-adcock/" alt="Zach Adcock LinkedIn URL">
+                    <img src={LinkedInLogo} alt="LinkedIn Logo" />
+                </a>
+                <a href="https://github.com/zach-adcock" alt="Zach Adcock GitHub URL">
+                    <img src={GitHubLogo} alt="GitHub Logo" />
                 </a>
             </div>
         </div>
