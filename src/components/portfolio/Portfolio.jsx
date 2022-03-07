@@ -13,6 +13,7 @@ export default function Portfolio() {
             <h2>Projects</h2>
             <div className="projects">
                 <div className="project trip-planner">
+                <div className="project-title">Trip Planner</div>
                     <div className="img-container">
                         <img src={plannerIMG} alt="trip-plannerproject" />
                         <div className="overlay">
@@ -21,7 +22,7 @@ export default function Portfolio() {
                     </div>
                     <div className="project-description">
                         A webapp built in react to help you find things to do in your city or 
-                        on your vacation.
+                        on your vacation. A react app written with JavaScript, HTML, and Styled Divisions. Hosted on AWS Amplify.
                     </div>
                     <div className="project-links">
                         <div className="project-btn">
@@ -33,6 +34,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="project portfolio-project">
+                    <div className="project-title">Portfolio Project</div>
                     <div className="img-container">
                         <img src={portfolioIMG} alt="portfolio project" />
                         <div className="overlay">
@@ -41,7 +43,7 @@ export default function Portfolio() {
                     </div>
                     <div className="project-description">
                         A react app built by and for yours truly. Take a look around and feel free to ask 
-                        questions!
+                        questions! Hosted by Netlify.
                     </div>
                     <div className="project-links">
                         <div className="project-btn">
@@ -53,6 +55,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="project etch-a-sketch">
+                    <div className="project-title">Etch-A-Sketch</div>
                     <div className="img-container">
                         <img src={etchASketchIMG} alt="etch-a-sketch project" />
                         <div className="overlay">
@@ -72,6 +75,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="project library">
+                    <div className="project-title">Library</div>
                     <div className="img-container">
                         <img src={libraryIMG} alt="library project" />
                         <div className="overlay">

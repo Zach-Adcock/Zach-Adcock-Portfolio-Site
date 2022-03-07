@@ -8,7 +8,7 @@
     position: relative;
     top: 12vh;
 
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     overflow: scroll;
     scrollbar-width: none; //firefox
     scroll-behavior: smooth;
