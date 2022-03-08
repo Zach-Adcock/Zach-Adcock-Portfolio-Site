@@ -20,14 +20,19 @@
     }
   }
   @media only screen and (max-width: 640px) {
+    .app {
+      overflow: hidden;
+    }
     .sections {
       height: 100vh;
       top: 100px;
+      scroll-snap-type: none;
     }
     > * {
-      width: 100%;
+      width: 100vw;
       height: 100vh;
-      scroll-snap-align: start;
+
+      scroll-snap-align: none;
     }
   }
 }

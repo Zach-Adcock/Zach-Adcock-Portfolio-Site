@@ -130,6 +130,8 @@
 @media only screen and (max-width: 640px) {
   .portfolio {
     height: 2000px !important;
+    margin-top: 0px;
+
     h2 {
       height: 100px;
     }
@@ -138,10 +140,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 80%;
   }
   .project {
     width: 70vw;
-    height: 65vh;
+    height: 400px;
     padding-top: 10px;
     margin-bottom: 20px;
   }
