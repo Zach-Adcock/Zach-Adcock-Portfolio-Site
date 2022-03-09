@@ -129,8 +129,10 @@
 }
 @media only screen and (max-width: 640px) {
   .portfolio {
-    height: 2000px !important;
+    height: calc(2200px - 50vw) !important;
     margin-top: 0px;
+    word-wrap: break-word;
+    justify-content: flex-start;
 
     h2 {
       height: 100px;
@@ -139,7 +141,7 @@
   .projects {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 80%;
   }
   .project {
@@ -155,8 +157,13 @@
   }
   .project-title {
     display: flex;
+    justify-content: center;
     margin: 5px auto;
     font-size: 1.5em;
     font-weight: bold;
+    width: 60%;
   }
+}
+
+@media only screen and (max-width: 507px) {
 }
