@@ -7,7 +7,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
+  height: calc(100vh - 100px);
   position: relative;
 }
 
@@ -17,11 +17,12 @@
   justify-content: flex-start;
   padding-top: 50px;
 
-  width: 50vw;
+  width: 65vw;
   height: 80%;
 
   h1 {
-    font-size: 80px;
+    font-size: 120px;
+    height: 180px;
     text-shadow: 2.5px 2.5px 0px #f7df1e, 5px 5px 0px #00d8ff,
       7.5px 7.5px 0px #adacac, 10px 10px 0px #e44d26, 12.5px 12.5px 0px #0377bd;
   }
@@ -32,14 +33,19 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  height: 60%;
+  height: 80%;
   width: 100%;
   background-color: rgb(173, 172, 172);
   box-sizing: border-box;
   padding: 15px;
   z-index: 2;
-  //   box-shadow: 5px 5px 0px #f7df1e, 10px 10px 0px #00d8ff, 15px 15px 0px #adacac,
-  //     20px 20px 0px #e44d26, 25px 25px 0px #0377bd;
+  .centering-div {
+    font-size: 1.6em;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 #tsparticles {
@@ -108,9 +114,27 @@ canvas {
   z-index: 2;
 }
 
+//shrink font as screen narrows
+@media only screen and (max-width: 1255px) {
+  .about-text-container {
+    .centering-div {
+      font-size: 1.35em;
+    }
+  }
+}
+//shrink font  further
+@media only screen and (max-width: 850px) {
+  .about-text-container {
+    .centering-div {
+      font-size: 1.25em;
+    }
+  }
+}
+
+//css or mobile
 @media only screen and (max-width: 640px) {
   .about {
-    height: 1200px !important;
+    height: 1000px;
     width: 100vw;
     justify-content: flex-start;
     word-wrap: break-word;
@@ -118,7 +142,7 @@ canvas {
   .about-wrapper {
     width: 90vw;
     height: calc(2000px-50vw);
-    padding-top: 10px;
+    padding-top: 20px;
     h1 {
       margin-bottom: 10px;
       z-index: 3;
@@ -129,15 +153,23 @@ canvas {
   }
   .icon-container {
     width: 90vw;
+    max-height: 180px;
   }
   .about-text-container {
-    height: 2000px !important;
-    overflow-y: visible;
-    font-size: 1.2em;
-    padding: 0px 5px;
-    margin-top: 30px;
-    p {
-      margin-top: 10px;
+    display: flex;
+    height: calc(1 * 80vh);
+    .centering-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 500px;
+      overflow-y: visible;
+      font-size: 1.2em;
+      padding: 0px 8px;
+      margin: auto auto;
+      p {
+        margin-top: 30px;
+      }
     }
   }
   #tsparticles {
@@ -145,11 +177,44 @@ canvas {
   }
 }
 
-@media only screen and (min-width: 456px) {
-  .about-wrapper {
-    h1 {
-      height: 100px;
-      min-height: 120px;
+//Need to make about-text-container taller when screen is very narrow
+@media only screen and (max-width: 456px) {
+  .about {
+    height: 1050px;
+  }
+  .about-text-container {
+    height: 600px;
+  }
+}
+
+//Need to make about-text-container taller when screen is very narrow
+@media only screen and (max-width: 417px) {
+  .about {
+    height: 1300px;
+  }
+  .about-text-container {
+    height: 750px;
+    .centering-div {
+      height: 650px;
     }
   }
 }
+
+//Need to make about-text-container taller when screen is very narrow
+@media only screen and (max-width: 317px) {
+  .about-text-container {
+    height: 750px;
+    .centering-div {
+      height: 750px;
+    }
+  }
+}
+
+// @media only screen and (min-width: 456px) {
+//   .about-wrapper {
+//     h1 {
+//       height: 100px;
+//       min-height: 120px;
+//     }
+//   }
+// }

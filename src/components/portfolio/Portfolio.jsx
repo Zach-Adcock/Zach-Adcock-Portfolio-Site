@@ -20,7 +20,7 @@ export default function Portfolio() {
                             <div className="title">Trip Planner</div>
                         </div>
                     </div>
-                    <div className="project-description">
+                    <div className="project-description trip-planner-description">
                         A webapp built in react to help you find things to do in your city or 
                         on your vacation. A react app written with JavaScript, HTML, and Styled Divisions. Hosted on AWS Amplify.
                     </div>
@@ -41,7 +41,7 @@ export default function Portfolio() {
                             <div className="title">Portfolio Site</div>
                         </div>
                     </div>
-                    <div className="project-description">
+                    <div className="project-description portfolio-project-description">
                         A react app built by and for yours truly. Take a look around and feel free to ask 
                         questions! Hosted by Netlify.
                     </div>

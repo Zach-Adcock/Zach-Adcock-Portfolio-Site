@@ -6,8 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  height: calc(100vh + 300px) !important;
+  height: calc(100vh + 300px);
   h2 {
     margin: 30px 0;
     font-weight: 500;
@@ -127,9 +126,22 @@
 .project-title {
   display: none;
 }
+
+@media only screen and (max-width: 1300px) and (min-width: 640px) {
+  .projects {
+    width: 80vw;
+    grid-template-columns: auto auto;
+    align-items: center;
+    overflow-x: visible;
+    .project {
+      width: 100%;
+      padding-top: 10px;
+    }
+  }
+}
 @media only screen and (max-width: 640px) {
   .portfolio {
-    height: calc(2200px - 50vw) !important;
+    height: calc(2200px - 50vw);
     margin-top: 0px;
     word-wrap: break-word;
     justify-content: flex-start;
@@ -165,5 +177,55 @@
   }
 }
 
-@media only screen and (max-width: 507px) {
+@media only screen and (max-width: 515px) {
+  .projects {
+    height: 1750px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .portfolio {
+    height: calc(2600px - 50vw);
+  }
+  .projects {
+    height: 1950px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .portfolio {
+    height: calc(2600px - 50vw);
+  }
+  .projects {
+    height: 2450px;
+    .trip-planner {
+      height: 500px;
+      .trip-planner-description {
+        flex: 0.5;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .portfolio {
+    height: calc(2600px - 50vw);
+  }
+  .projects {
+    height: 2450px;
+    .project {
+      height: 450px;
+      .project-description {
+        flex: 0.4;
+      }
+    }
+    .trip-planner {
+      height: 500px;
+      .trip-planner-description {
+        flex: 0.6;
+      }
+      .portfolio-project-description {
+        flex: 0.5;
+      }
+    }
+  }
 }

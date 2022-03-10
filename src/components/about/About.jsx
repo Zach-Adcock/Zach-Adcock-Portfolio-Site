@@ -109,21 +109,23 @@ export default function About() {
             <div className="about-wrapper">
                 <h1>About Zach</h1>
                 <div className="about-text-container">
+                  <div className="centering-div">
                     <p className="about-text">
-                        I'm a front-end developer based in Seattle, WA. I have a passion for problem solving
-                        and working through challenges with a team. Continuously striving to learn new concepts and
-                        incorporate fresh tools keeps me motivated. 
+                          I'm a front-end developer based in Seattle, WA. I have a passion for problem solving
+                          and working through challenges with a team. Continuously striving to learn new concepts and
+                          incorporate fresh tools keeps me motivated. 
 
-                        Currently working as an intern for a Seattle based start-up.
-                    </p>
-                    <p className="about-text">
-                        My current focus is on JavaScript, ReactJS, CSS, and HTML, but I'm always
-                        learning new languages/frameworks to grow as a developer.
-                    </p>
-                    <p className="about-text">
-                        Outside of work you can find me hiking, snowboarding, or playing soccer. I also love to read 
-                        and play board games with friends and family.
-                    </p>
+                          Currently working as an intern for a Seattle based start-up.
+                      </p>
+                      <p className="about-text">
+                          My current focus is on JavaScript, ReactJS, CSS, and HTML, but I'm always
+                          learning new languages/frameworks to grow as a developer.
+                      </p>
+                      <p className="about-text">
+                          Outside of work you can find me hiking, snowboarding, or playing soccer. I also love to read 
+                          and play board games with friends and family.
+                      </p>
+                  </div>
                 </div>
             </div>
             <div className="icon-container">
