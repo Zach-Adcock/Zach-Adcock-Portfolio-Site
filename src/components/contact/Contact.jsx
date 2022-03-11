@@ -25,31 +25,31 @@ export default function Contact() {
     const [recaptchaToken, setRecaptchaToken] = useState();
     const submitForm = async (e) => {
         e.preventDefault();
-        await postSubmission();
+        // await postSubmission();
     }
     
-    const postSubmission = async () => {
-        const payload = {
-            ...formState,
-            'g-recaptcha-response': recaptchaToken,
-        };
-        try {
-            const result = await axios.post(formSparkURL, payload);
-            console.log(result);
-            setMessage({
-                class: 'success-message',
-                text: `Thanks, I'll get back to you soon!`
-            })
-            setFormState(initialFormState) //resets form after submission
-            recaptchaRef.current.reset(); //reset ReCAPTCHA after submission
-        } catch(error) {
-            console.log(error.message)
-            setMessage({
-                class: 'error-message',
-                text: 'Sorry, looks like there\'s been a problem. I\'ll have a stern word with this website\'s creator.'
-            })
-        }
-    }
+    // const postSubmission = async () => {
+    //     const payload = {
+    //         ...formState,
+    //         'g-recaptcha-response': recaptchaToken,
+    //     };
+    //     try {
+    //         const result = await axios.post(formSparkURL, payload);
+    //         console.log(result);
+    //         setMessage({
+    //             class: 'success-message',
+    //             text: `Thanks, I'll get back to you soon!`
+    //         })
+    //         setFormState(initialFormState) //resets form after submission
+    //         recaptchaRef.current.reset(); //reset ReCAPTCHA after submission
+    //     } catch(error) {
+    //         console.log(error.message)
+    //         setMessage({
+    //             class: 'error-message',
+    //             text: 'Sorry, looks like there\'s been a problem. I\'ll have a stern word with this website\'s creator.'
+    //         })
+    //     }
+    // }
 
     const updateForm = (e) => {
         const {id, value} = e.target;
@@ -59,9 +59,9 @@ export default function Contact() {
         setFormState(updatedFormState);
     }
 
-    const updateRecaptchaToken = (token) => {
-        setRecaptchaToken(token);
-    } 
+    // const updateRecaptchaToken = (token) => {
+    //     setRecaptchaToken(token);
+    // } 
 
 
     return (
@@ -72,7 +72,7 @@ export default function Contact() {
                     {message && <div className={message.class}>{message.text}</div>}
                 </div>
                 
-                <form onSubmit={submitForm}>
+                <form onSubmit="submit" name="contact-form" method="post" data-netlify="true">
                     <div className="name">
                         <label htmlFor="name"></label>
                         <input 
@@ -118,16 +118,16 @@ export default function Contact() {
                         </textarea>
                     </div>
 
-                    <ReCAPTCHA 
+                    {/* <ReCAPTCHA 
                         ref={recaptchaRef}
                         sitekey={recaptchaKey}
                         onChange={updateRecaptchaToken}
-                    />
+                    /> */}
 
                     <div className="form-button">
-                        <button disabled={submitting} className="form-btn">
-                        {submitting ? 'Submitting...' : 'Submit'}  
-                        </button> 
+                        {/* <button disabled={submitting} className="form-btn">
+                        {submitting ? 'Submitting...' : 'Submit'}   */}
+                        <button className="form-btn">Submit</button> 
                     </div>
                     
                 </form>

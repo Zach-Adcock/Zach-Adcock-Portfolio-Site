@@ -49,6 +49,10 @@
       transition: all 1s ease;
     }
   }
+  form {
+    width: 80%;
+    margin-top: 20px;
+  }
 }
 
 .error-print {
@@ -67,5 +71,9 @@
     width: 90vw;
     height: 65vh;
     margin-top: 100px;
+  }
+  form {
+    width: 90%;
+    margin-top: 20px;
   }
 }
