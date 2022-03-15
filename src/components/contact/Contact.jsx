@@ -72,7 +72,7 @@ export default function Contact() {
                     {message && <div className={message.class}>{message.text}</div>}
                 </div>
                 
-                <form onSubmit="submit" name="contact-form" method="post" data-netlify="true">
+                <form onSubmit="submit" name="contact-form" method="POST" data-netlify="true">
                     <div className="name">
                         <label htmlFor="name"></label>
                         <input 
