@@ -76,6 +76,7 @@ export default function Contact() {
                     <div className="name">
                         <label htmlFor="name"></label>
                         <input 
+                        name = "name"
                         placeholder = "Name"
                         type="text"
                         onChange={updateForm}
@@ -87,6 +88,7 @@ export default function Contact() {
                     <div className="email">
                         <label htmlFor="email"></label>
                         <input 
+                        name = "email"
                         type="email"
                         placeholder= "Email"
                         onChange={updateForm}
@@ -99,6 +101,7 @@ export default function Contact() {
                     <div className="subject">
                         <label htmlFor="subject"></label>
                         <input
+                        name="subject"
                         type="text"
                         placeholder= "Subject" 
                         onChange={updateForm}
@@ -110,6 +113,7 @@ export default function Contact() {
                     <div className="message">
                         <label htmlFor="message"></label>
                         <textarea
+                        name="message"
                         placeholder= "Message" 
                         onChange={updateForm}
                         className="nameInput" 
