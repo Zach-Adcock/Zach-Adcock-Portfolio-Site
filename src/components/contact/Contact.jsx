@@ -120,7 +120,9 @@ export default function Contact() {
                         id="message"
                         value={formState.message}>
                         </textarea>
+                        <div data-netlify-recaptcha="true"></div>
                     </div>
+                    
 
                     {/* <ReCAPTCHA 
                         ref={recaptchaRef}
