@@ -4,7 +4,7 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import LinkedInLogo from "../../logos/LinkedInLogo.png";
 import GitHubLogo from "../../logos/GitHubLogo.png";
-import ResumePDF from "../../PDFs/ZachAdcockResume2022"
+import ResumePDF from "../../pdfs/ZachAdcockResume2022.pdf"
 
 
 
