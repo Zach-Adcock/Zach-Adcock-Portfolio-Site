@@ -22,6 +22,36 @@
     </style>
   </head>
   <body>
+    <form name="contact-form" netlify netlify-honeypot="bot-field" action="/" hidden>
+      <div>
+        <input 
+        name = "contact-name"
+        type="text"
+        className="nameInput" 
+        required/>
+    </div>
+    <div>
+        <input 
+        name = "email"
+        type="email"
+        className="nameInput" 
+        required
+        />
+    </div>
+    <div>
+        <input
+        name="subject"
+        type="text"
+        className="nameInput" 
+        />
+    </div>
+    <div>
+        <textarea
+        name="message"
+        className="nameInput">
+        </textarea>
+    </div>
+    </form>
     <noscript>You need to enable JavaScript to run this app..</noscript>
     <div id="root"></div>
   </body>

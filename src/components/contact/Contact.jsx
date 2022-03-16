@@ -4,29 +4,29 @@ import { useState, useRef } from "react";
 import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Contact() {
-    const formId = 'ezIPbdmq';
-    const formSparkURL = `https://submit-form.com/${formId}`;
-    const recaptchaKey = '6LeBnfodAAAAANIZVyOLasbJhfgezFreicTvenad';
-    const recaptchaRef = useRef()
+    // const formId = 'ezIPbdmq';
+    // const formSparkURL = `https://submit-form.com/${formId}`;
+    // const recaptchaKey = '6LeBnfodAAAAANIZVyOLasbJhfgezFreicTvenad';
+    // const recaptchaRef = useRef()
 
-    const initialFormState = {
-        email: '',
-        name: '',
-        message: '',
-    }
-    const [formState,setFormState] = useState({ //tracks the current values of form
-        email: '',
-        name: '',
-        message: '',
-    });
+    // const initialFormState = {
+    //     email: '',
+    //     name: '',
+    //     message: '',
+    // }
+    // const [formState,setFormState] = useState({ //tracks the current values of form
+    //     email: '',
+    //     name: '',
+    //     message: '',
+    // });
     // const [submitting, setSubmitting] = useState(false);
-    const submitting = false;
-    const [message, setMessage] = useState();
-    const [recaptchaToken, setRecaptchaToken] = useState();
-    const submitForm = async (e) => {
-        e.preventDefault();
+    // const submitting = false;
+    // const [message, setMessage] = useState();
+    // const [recaptchaToken, setRecaptchaToken] = useState();
+    // const submitForm = async (e) => {
+    //     e.preventDefault();
         // await postSubmission();
-    }
+    // }
     
     // const postSubmission = async () => {
     //     const payload = {
@@ -51,13 +51,13 @@ export default function Contact() {
     //     }
     // }
 
-    const updateForm = (e) => {
-        const {id, value} = e.target;
-        const formKey = id;
-        const updatedFormState = {...formState};
-        updatedFormState[formKey] = value;
-        setFormState(updatedFormState);
-    }
+    // const updateForm = (e) => {
+    //     const {id, value} = e.target;
+    //     const formKey = id;
+    //     const updatedFormState = {...formState};
+    //     updatedFormState[formKey] = value;
+    //     setFormState(updatedFormState);
+    // }
 
     // const updateRecaptchaToken = (token) => {
     //     setRecaptchaToken(token);
@@ -68,37 +68,56 @@ export default function Contact() {
         <div className="contact" id="contact">
             <div className="contact-form">
                 <h1>Contact Me</h1>
-                <div className="error-print">
+                {/* <div className="error-print">
                     {message && <div className={message.class}>{message.text}</div>}
-                </div>
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                        <label>Your Name: <input type="text" name="name" /></label>   
-                    </p>
-                    <p>
-                        <label>Your Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <label>Your Role: <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                        </select></label>
-                    </p>
-                    <p>
-                        <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
+                </div> */}
+                <form name="contact-form" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact-form"/>
+                    <div>
+                        <input 
+                        name = "contact-name"
+                        placeholder = "Name"
+                        type="text"
+                        className="nameInput" 
+                        required/>
+                    </div>
+                    <div>
+                        <input 
+                        name = "email"
+                        type="email"
+                        placeholder= "Email"
+                        className="nameInput" 
+                        required
+                        />
+                    </div>
+                    <div>
+                        <input
+                        name="subject"
+                        type="text"
+                        placeholder= "Subject" 
+                        className="nameInput" 
+                        />
+                    </div>
+                    <div>
+                        <textarea
+                        name="message"
+                        placeholder= "Enter your message" 
+                        className="nameInput">
+                        </textarea>
+                    </div>
+                    <div>
                         <button type="submit">Submit</button>
-                    </p>
+                    </div>
                 </form>
                 
             </div> 
         </div>
-    )
-}
+    );
+    }
 
 
-{/* <form onSubmit="submit" name="contact-form" method="POST" data-netlify="true">
+
+/* <form onSubmit="submit" name="contact-form" method="POST" data-netlify="true">
                     <div className="name">
                         <label htmlFor="name"></label>
                         <input 
@@ -162,4 +181,4 @@ export default function Contact() {
                         <button className="form-btn">Submit</button> 
                     </div>
                     
-                </form>  */}
+                </form>  */
