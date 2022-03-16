@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 900px;
+  min-height: 700px;
 }
 
 .contact-form {
@@ -20,7 +21,7 @@
   input {
     -webkit-appearance: none;
     border: 0px solid grey;
-    box-shadow: 2px 2px 0px lightsalmon, 4px 4px black;
+    box-shadow: 2px 2px 0px lightsalmon, -2px 2px 5px black;
 
     border-radius: 20px;
 
@@ -36,6 +37,10 @@
   .form-button {
     display: flex;
     justify-content: center;
+  }
+  .submit-button-div {
+    display: flex;
+    align-items: center;
   }
   button {
     margin: 10px auto;
@@ -62,6 +67,7 @@
 @media only screen and (max-width: 640px) {
   .contact {
     height: 1000px !important;
+    min-height: 900px;
   }
   .contact-form {
     display: flex;

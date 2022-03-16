@@ -1,9 +1,9 @@
 .app {
   height: 100vh;
-
+  min-height: 100vh;
   .sections {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100%;
     // background-color: chocolate;
     position: relative;
     top: 12vh;
