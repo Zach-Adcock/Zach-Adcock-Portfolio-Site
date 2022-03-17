@@ -4,7 +4,7 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import LinkedInLogo from "../../logos/LinkedInLogo.png";
 import GitHubLogo from "../../logos/GitHubLogo.png";
-import ResumePDF from "../../pdfs/ZachAdcockResume.pdf";
+import ResumePDF from "../../logos/ZachAdcockResume.pdf";
 
 
 
@@ -29,7 +29,7 @@ export default function Intro() {
                 <div className="photo-circle"></div>
                 <div className="rectangle"></div>
                 <div className="external-links-mobile">
-                    <a href = {ResumePDF} target = "_blank">
+                    <a href = {ResumePDF} target = "_blank" rel="noreferrer">
                         <div className="resume-box-mobile">Download Resume</div>
                     </a>
                     <a href="https://www.linkedin.com/in/zachary-adcock/" alt="Zach Adcock LinkedIn URL">
@@ -52,7 +52,7 @@ export default function Intro() {
                 
             </div>
             <div className="external-links">
-                <a href = {ResumePDF} target = "_blank">
+                <a href = {ResumePDF} target = "_blank" rel="noreferrer">
                     <div className="resume-box">Download Resume</div>
                 </a>
                 <a href="https://www.linkedin.com/in/zachary-adcock/" alt="Zach Adcock LinkedIn URL">
