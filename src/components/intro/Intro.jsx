@@ -29,7 +29,7 @@ export default function Intro() {
                 <div className="photo-circle"></div>
                 <div className="rectangle"></div>
                 <div className="external-links-mobile">
-                    <a href = {ResumePDF} target = "_blank" rel="noreferrer">
+                    <a href = {ResumePDF} target = "_blank" >
                         <div className="resume-box-mobile">Download Resume</div>
                     </a>
                     <a href="https://www.linkedin.com/in/zachary-adcock/" alt="Zach Adcock LinkedIn URL">

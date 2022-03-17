@@ -26,7 +26,7 @@ export default function Portfolio() {
                     </div>
                     <div className="project-links">
                         <div className="project-btn">
-                            <a href="https://github.com/Zach-Adcock/Trip-Planner">Site</a>
+                            <a href="https://main.d5tlnbeihc1qx.amplifyapp.com/">Site</a>
                         </div>
                         <div className="project-btn">
                             <a href="https://github.com/Zach-Adcock/Trip-Planner">Code</a>
@@ -47,7 +47,7 @@ export default function Portfolio() {
                     </div>
                     <div className="project-links">
                         <div className="project-btn">
-                            <a href="https://github.com/Zach-Adcock/Zach-Adcock-Portfolio-Site">Site</a>
+                            <a href="https://zachadcock.com/">Site</a>
                         </div>
                         <div className="project-btn">
                             <a href="https://github.com/Zach-Adcock/Zach-Adcock-Portfolio-Site">Code</a>
