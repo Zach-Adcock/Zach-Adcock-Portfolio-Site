@@ -6,14 +6,14 @@
 
   height: 100vh;
   background-color: white;
-  color: $mainBlue;
+  color: $mainGrey;
   position: fixed;
   top: 0;
   right: -350px;
 
   z-index: 3;
   display: flex;
-  border: 2px solid $mainBlue;
+  border: 2px solid $mainGrey;
 
   //   flex-direction: column;
   //   justify-content: center;
@@ -28,7 +28,7 @@
     padding: 0;
     list-style: none;
     font-size: 35px;
-    color: $mainBlue;
+    color: $mainGrey;
 
     width: 99%;
     li {

@@ -1,9 +1,11 @@
 import "./about.scss";
 import Particles from "react-tsparticles";
-import CSSLogo from "../../logos/css3.svg";
-import HTMLLogo from "../../logos/html.svg";
-import JavascriptLogo from "../../logos/javascript.svg";
-import ReactLogo from "../../logos/react.svg";
+import CSSLogo from "../../logos/css.png";
+import HTMLLogo from "../../logos/html.png";
+import JavascriptLogo from "../../logos/javascript.png";
+import ReactLogo from "../../logos/react.png";
+import GitLogo from "../../logos/git.png";
+import NodeLogo from "../../logos/node.png"
 
 
 
@@ -23,7 +25,7 @@ export default function About() {
       options={{
         // background: {
         //   color: {
-        //     value: "#0d47a1",
+        //     value: "$mainGrey",
         //   },
         // },
         fullScreen: {enable: false},
@@ -117,38 +119,56 @@ export default function About() {
 
                           Currently working as an intern for a Seattle based start-up.
                       </p>
-                      <p className="about-text">
-                          My current focus is on JavaScript, ReactJS, CSS, and HTML, but I'm always
-                          learning new languages/frameworks to grow as a developer.
-                      </p>
-                      <p className="about-text">
-                          Outside of work you can find me hiking, snowboarding, or playing soccer. I also love to read 
-                          and play board games with friends and family.
-                      </p>
                   </div>
                 </div>
-            </div>
-            <div className="icon-container">
-                <div className="icon-box">
-                    <img src={JavascriptLogo} alt="JavascriptLogo" className='picture'/>
-                    <h2>JavaScript</h2>
-                    <div className="box"></div>
-                </div>
-                <div className="icon-box">
-                    <img src={CSSLogo} alt="CSSLogo" className='picture' />
-                    <h2>CSS</h2>
-                    <div className="box"></div>
-                </div>
-                <div className="icon-box">
-                    <img src={HTMLLogo} alt="HTMLLogo" className='picture'/>
-                    <h2>HTML</h2>
-                    <div className="box"></div>
-                </div>
-                <div className="icon-box">                    
-                    <img src={ReactLogo} alt="ReactLogo" className='picture'/>
-                    <h2>React</h2>
-                    <div className="box"></div>
-                </div>
+              <div className="icons-container">
+                  <div className="icon-group icon-group-one">
+                    <div className="icon-wrapper">
+                      <div className="icon-box">
+                          <img src={JavascriptLogo} alt="JavascriptLogo" className='picture'/>
+                          <h2>JavaScript</h2>
+                          <div className="icon-hover"></div>
+                      </div>
+                    </div>
+                    <div className="icon-wrapper">
+                      <div className="icon-box">
+                          <img src={CSSLogo} alt="CSSLogo" className='picture' />
+                          <h2>CSS</h2>
+                          <div className="icon-hover"></div>
+                      </div>
+                    </div>
+                    <div className="icon-wrapper">
+                      <div className="icon-box">
+                          <img src={HTMLLogo} alt="HTMLLogo" className='picture'/>
+                          <h2>HTML</h2>
+                          <div className="icon-hover"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="icon-group icon-group-two">
+                    <div className="icon-wrapper">
+                      <div className="icon-box">                    
+                          <img src={ReactLogo} alt="ReactLogo" className='picture'/>
+                          <h2>React</h2>
+                          <div className="icon-hover"></div>
+                      </div>
+                    </div>
+                    <div className="icon-wrapper">
+                      <div className="icon-box">
+                          <img src={GitLogo} alt="GitLogo" className='picture'/>
+                          <h2>Git</h2>
+                          <div className="icon-hover"></div>
+                      </div>
+                    </div>
+                    <div className="icon-wrapper">
+                      <div className="icon-box">
+                          <img src={NodeLogo} alt="NodeLogo" className='picture'/>
+                          <h2>Node</h2>
+                          <div className="icon-hover"></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </div>
         </div>
     )
