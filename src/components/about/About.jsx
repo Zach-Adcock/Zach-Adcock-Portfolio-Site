@@ -63,10 +63,10 @@ export default function About() {
             reduceDuplicates: true,
           },  
           color: {
-            value: "#ffffff",
+            value: "#ffffff52",
           },
           links: {
-            color: "#ffffff",
+            color: "#ffffffc1",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -114,9 +114,9 @@ export default function About() {
                   <div className="centering-div">
                     <p className="about-text">
                           I'm a front-end developer based in Seattle, WA. I have a passion for problem solving
-                          and working through challenges with a team. Continuously striving to learn new concepts and
-                          incorporate fresh tools keeps me motivated. 
-
+                          and working past obstacles with a team. Continuously striving to learn new concepts and
+                          incorporate fresh tools. Always ready for a new challenge.
+                          <br /><br />
                           Currently working as an intern for a Seattle based start-up.
                       </p>
                   </div>

@@ -5,7 +5,7 @@
   height: 12vh;
   background-color: $mainGrey;
   color: white;
-  border-top: 2px solid white;
+  // border-top: 2px solid white;
   border-bottom: 2px solid white;
 
   position: fixed;
@@ -78,24 +78,21 @@
     }
   }
   &.active {
-    background-color: white;
-    color: $mainGrey;
-    border-top: 2px solid $mainGrey;
-    border-bottom: 2px solid $mainGrey;
+    background-color: $mainGrey;
+    color: white;
+    // border-top: 2px solid $mainGrey;
+    // border-bottom: 2px solid $mainGrey;
 
     .hamburger {
       span {
         &:nth-child(1) {
-          background-color: $mainGrey;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
-          background-color: $mainGrey;
           opacity: 0;
           transition: none;
         }
         &:nth-child(3) {
-          background-color: $mainGrey;
           transform: rotate(-45deg);
         }
       }
@@ -117,6 +114,7 @@
         height: 100%;
         width: 50%;
         min-width: 100px;
+        align-items: flex-start;
         .links {
           display: none;
         }
@@ -124,7 +122,7 @@
           height: 60%;
           width: 10%;
           min-width: 40px;
-          margin: auto 0px;
+          margin-top: 10px;
           span {
             height: 5px;
             // &:nth-child(1) {
@@ -161,27 +159,22 @@
       }
     }
     &.active {
-      border-bottom: 5px solid $mainGrey;
+      border-bottom: 2px solid $mainGrey;
 
       .hamburger {
         padding-left: 10px;
         span {
           &:nth-child(1) {
-            background-color: $mainGrey;
             transform: rotate(45deg);
-            width: 63px;
+            width: 96%;
           }
           &:nth-child(2) {
-            background-color: $mainGrey;
             opacity: 0;
             transition: none;
-            width: 63px;
           }
           &:nth-child(3) {
-            background-color: $mainGrey;
-            width: 63px;
-
             transform: rotate(-45deg);
+            width: 96%;
           }
         }
       }

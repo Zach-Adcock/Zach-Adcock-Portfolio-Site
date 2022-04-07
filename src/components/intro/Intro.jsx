@@ -26,9 +26,9 @@ export default function Intro() {
     return (
         <div className="intro" id="intro">
             <div className="photo-container">
-                <div className="photo-circle"></div>
-                <div className="rectangle"></div>
-                <div className="external-links-mobile">
+                {/* <div className="photo-circle"></div>
+                <div className="rectangle"></div> */}
+                {/* <div className="external-links-mobile">
                     <a href = {ResumePDF} target = "_blank" >
                         <div className="resume-box-mobile">Download Resume</div>
                     </a>
@@ -38,7 +38,7 @@ export default function Intro() {
                     <a href="https://github.com/zach-adcock" alt="Zach Adcock GitHub URL">
                         <img src={GitHubLogo} alt="GitHub Logo" />
                     </a>
-                </div>
+                </div> */}
             </div>
             <div className="intro-text-container">
                 <div className="intro-text">

@@ -7,7 +7,7 @@
   width: 100vw;
   height: 88vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: black;
   font-weight: bold;
@@ -29,14 +29,7 @@
   object-fit: cover;
 }
 .photo-container {
-  flex: 0.35;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 .photo-circle {
   background: url(../../../public/images/headshot.jpg);
@@ -74,7 +67,7 @@
 
   height: 100%;
   width: 100%;
-  flex: 0.65;
+  flex: 0.8;
   display: flex;
   flex-direction: column;
 
@@ -111,9 +104,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  h3,
+  h2,
+  h1 {
+    height: 12vh;
+    font-size: 2.5em;
+  }
   h3 {
-    color: #0377bd; //$mainGreen;
+    color: $mainBlue;
     span {
       color: inherit;
     }
@@ -135,7 +133,7 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
-  flex: 0.1;
+  flex: 0.125;
   bottom: 0px;
   z-index: 2;
   margin-bottom: 40px;
@@ -171,22 +169,18 @@
     padding: 10px 0px 0px 20px;
     z-index: 2;
     height: 60vh;
+    flex: 0.7;
     .intro-text {
       padding-top: 0px;
       padding-left: 10px;
       flex: 1;
     }
-    h2 {
-      height: 80px;
-      overflow-y: visible;
-    }
+    h3,
+    h2,
     h1 {
-      height: 110px;
+      height: 90px;
       overflow-y: visible;
-    }
-    h3 {
-      height: 116px;
-      overflow-y: visible;
+      font-size: 2em;
     }
     a {
       display: none;
@@ -251,5 +245,17 @@
   }
   .intro::before {
     height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .intro-text-container {
+    h3 {
+      font-size: 1.15em;
+    }
+    h2,
+    h1 {
+      font-size: 2em;
+    }
   }
 }
