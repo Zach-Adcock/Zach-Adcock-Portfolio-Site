@@ -1,6 +1,8 @@
 @import "../../global.scss";
 
 .about {
+  overflow-x: hidden;
+
   background-color: $mainGrey;
   display: flex;
   justify-content: center;
@@ -183,6 +185,7 @@ canvas {
 //shrink font  further
 @media only screen and (max-width: 800px) {
   .about-wrapper {
+    overflow-x: hidden;
     h1 {
       font-size: 6em;
       height: 130px;
