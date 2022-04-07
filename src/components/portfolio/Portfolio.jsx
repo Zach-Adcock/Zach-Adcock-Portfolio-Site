@@ -34,7 +34,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="project portfolio-project">
-                    <div className="project-title">Portfolio Project</div>
+                    <div className="project-title">Portfolio</div>
                     <div className="img-container">
                         <img src={portfolioIMG} alt="portfolio project" />
                         <div className="overlay">

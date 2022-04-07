@@ -24,7 +24,7 @@
   input {
     -webkit-appearance: none;
     border: 0px solid grey;
-    box-shadow: 2px 2px 0px lightsalmon, -2px 2px 5px black;
+    box-shadow: 2px 2px 0px $mainGrey, -2px 2px 5px black;
 
     border-radius: 20px;
 
@@ -52,8 +52,8 @@
     border-radius: 10px;
     border: none;
     &:hover {
-      -webkit-box-shadow: inset 0px 0px 24px 5px lightsalmon;
-      box-shadow: inset 0px 0px 24px 5px salmon;
+      -webkit-box-shadow: inset 0px 0px 24px 5px $mainGrey;
+      box-shadow: inset 0px 0px 24px 5px $mainGrey;
       transition: all 1s ease;
     }
   }
