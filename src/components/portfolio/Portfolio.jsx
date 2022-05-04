@@ -1,5 +1,5 @@
 import "./portfolio.scss";
-import libraryIMG from "../../portfolio-screenshots/library-shot.png"
+import grooveSurferIMG from "../../portfolio-screenshots/groove-surfer-shot.png"
 import etchASketchIMG from "../../portfolio-screenshots/etch-shot.png"
 import portfolioIMG from "../../portfolio-screenshots/portfolio-shot.png"
 import plannerIMG from "../../portfolio-screenshots/planner-shot.png"
@@ -30,6 +30,27 @@ export default function Portfolio() {
                         </div>
                         <div className="project-btn">
                             <a href="https://github.com/Zach-Adcock/Trip-Planner">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="project library">
+                    <div className="project-title">Groove Surfer</div>
+                    <div className="img-container">
+                        <img src={grooveSurferIMG} alt="Music Sharing project" />
+                        <div className="overlay">
+                            <div className="title">Groove Surfer</div>
+                        </div>
+                    </div>
+                    <div className="project-description">
+                        A CRUD app built to share music suggestions with your friends. Built with React, 
+                        Redux, MongoDB, NodeJS, and Express. Email and Google authentication enabled.
+                    </div>
+                    <div className="project-links">
+                        <div className="project-btn">
+                            <a href="https://zach-adcock.github.io/Groove-Surfer/">Site</a>
+                        </div>
+                        <div className="project-btn">
+                            <a href="https://github.com/Zach-Adcock/Groove-Surfer">Code</a>
                         </div>
                     </div>
                 </div>
@@ -74,28 +95,6 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className="project library">
-                    <div className="project-title">Library</div>
-                    <div className="img-container">
-                        <img src={libraryIMG} alt="library project" />
-                        <div className="overlay">
-                            <div className="title">Library Project</div>
-                        </div>
-                    </div>
-                    <div className="project-description">
-                        A webapp built to track the books in your personal library. Books can be 
-                        toggled between read/unread and Data is stored locally.
-                    </div>
-                    <div className="project-links">
-                        <div className="project-btn">
-                            <a href="https://zach-adcock.github.io/Library-Project/">Site</a>
-                        </div>
-                        <div className="project-btn">
-                            <a href="https://github.com/Zach-Adcock/Library-Project">Code</a>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import CSSLogo from "../../logos/css.png";
 import HTMLLogo from "../../logos/html.png";
 import JavascriptLogo from "../../logos/javascript.png";
 import ReactLogo from "../../logos/react.png";
-import GitLogo from "../../logos/git.png";
+import MongoLogo from "../../logos/mongodb.png";
 import NodeLogo from "../../logos/node.png"
 
 
@@ -46,7 +46,7 @@ export default function About() {
             bubble: {
               distance: 100,
               duration: 2,
-              opacity: 0.8,
+              opacity: 0.2,
               size: 40,
             },
             push: {
@@ -63,7 +63,7 @@ export default function About() {
             reduceDuplicates: true,
           },  
           color: {
-            value: "#ffffff52",
+            value: "#ffffff21",
           },
           links: {
             color: "#ffffffc1",
@@ -155,8 +155,8 @@ export default function About() {
                     </div>
                     <div className="icon-wrapper">
                       <div className="icon-box">
-                          <img src={GitLogo} alt="GitLogo" className='picture'/>
-                          <h2>Git</h2>
+                          <img src={MongoLogo} alt="MongoDBLogo" className='picture'/>
+                          <h2>MongoDB</h2>
                           <div className="icon-hover"></div>
                       </div>
                     </div>

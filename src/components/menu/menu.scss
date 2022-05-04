@@ -5,7 +5,7 @@
   width: 15vw;
 
   height: 100vh;
-  background-color: rgb(175, 175, 175);
+  background-color: white;
   color: $mainGrey;
   position: fixed;
   top: 0;
@@ -43,7 +43,9 @@
       }
     }
   }
-
+  .mobile-resume {
+    display: none;
+  }
   transition: all 1.5s ease;
   &.active {
     right: 0;
@@ -54,5 +56,12 @@
   .menu {
     width: 80vw;
     right: -105%;
+    .mobile-resume {
+      display: flex;
+      text-decoration: underline;
+    }
+    &.active {
+      width: 99%;
+    }
   }
 }
