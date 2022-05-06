@@ -47,7 +47,7 @@ export default function Portfolio() {
                     </div>
                     <div className="project-links">
                         <div className="project-btn">
-                            <a href="https://zach-adcock.github.io/Groove-Surfer/">Site</a>
+                            <a href="https://groove-surfer.netlify.app/posts">Site</a>
                         </div>
                         <div className="project-btn">
                             <a href="https://github.com/Zach-Adcock/Groove-Surfer">Code</a>
